@@ -3,6 +3,8 @@ Uma abordagem paralela e distribuída para assegurar a confidencialidade de dado
 
 Este repositório representa a implementação da abordagem pdQSM-Extraction. A implementação foi realizada em linguagem scala juntamente com o framework Apache Spark.
 
+Estes algoritmos foram executados no ambiente de nuvem :cloud: da Amazon. Obtivemos ganhos significativos em relação à técnica original QSM-Extraction, fazendo uso do paralelismo e da distribuição através do Spark.
+
 São 3 versões:
 
 **QSM5:**
@@ -30,3 +32,4 @@ Essa versão implementa pdQSM-Extraction com índice no bloco, com compressão n
 
 * 5 argumentos: *tamanho do bloco*  *arquivo original*  *PathToSaveQ*  *PathToSaveS*  *PathToSaveM*
 
+:+1:
