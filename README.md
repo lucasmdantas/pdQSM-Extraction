@@ -34,7 +34,10 @@ Essa versão implementa pdQSM-Extraction com índice no bloco, com compressão n
 
 * 5 argumentos: *tamanho do bloco*  *arquivo original*  *PathToSaveQ*  *PathToSaveS*  *PathToSaveM*
 
-Para executar esses algoritmos, é necessário:
+#### Para executar esses algoritmos, é necessário:
+
+ * Gerar arquivo .jar da aplicação com todas as devidas dependências.
+   * Exemplo: https://data-flair.training/blogs/create-spark-scala-project/
 
  * Local:
    * Ter o spark na máquina, além do java e scala estarem devidamente configurados. O spark pode ser baixado em: https://spark.apache.org/downloads.html
