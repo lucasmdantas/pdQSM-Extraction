@@ -6,16 +6,25 @@ Este repositório representa a implementação da abordagem pdQSM-Extraction. A 
 São 3 versões:
 
 QSM5:
+
 Essa versão implementa pdQSM-Extraction com índice global, com compressão na Medida:
+
 -Aqui quebramos diretamente o arquivo em blocos com a posicao do byte global [0,tamanho do arquivo]
+
 -5 argumentos: tamanho do bloco  arquivo original  PathToSaveQ  PathToSaveS  PathToSaveM
 
 QSM10:
+
 Essa versão implementa pdQSM-Extraction com índice no bloco, com compressão na Medida:
+
 -Aqui quebramos diretamente o arquivo em blocos com a posicao do byte local(no bloco) [0,tamanho do bloco]
+
 -5 argumentos: tamanho do bloco  arquivo original  PathToSaveQ  PathToSaveS  PathToSaveM
 
 QSM11:
+
 Essa versão implementa pdQSM-Extraction com índice no bloco, com compressão na Qualidade, Quantidade e na Medida:
+
 -Aqui quebramos diretamente o arquivo em blocos com a posicao do byte local(no bloco) [0,tamanho do bloco]
+
 -5 argumentos: tamanho do bloco  arquivo original  PathToSaveQ  PathToSaveS  PathToSaveM
