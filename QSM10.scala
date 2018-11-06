@@ -96,6 +96,7 @@ val mapKeys =orderedQSM.map(r=> ((r._1,r._2),(r._3,r._4))).persist(StorageLevel.
 
 // get only (block_number,byte),(ocurred) and reduce to get Quality and Quantity
 val QS = mapKeys.map(r=>(r._1,r._2._1))
+.sortBy(r=> r._1._1)
 .reduceByKey(_+_)
 
 //QS foreach println
@@ -108,6 +109,7 @@ Q.repartition(1)saveAsTextFile(args(2)+"/QSM/Q")
 
 //Saving number of times(Quantity) byte ocurred in each block
 val S = QS.map(record => record._2)
+
 S.repartition(1).saveAsTextFile(args(3)+"/QSM/S")
 
 //S foreach println
@@ -116,6 +118,7 @@ S.repartition(1).saveAsTextFile(args(3)+"/QSM/S")
 //aggregate to get the positions for each block that the byte ocurred
 val M = mapKeys.map(r=>(r._1,r._2._2))
 .aggregateByKey("")({case (aggr , value) => aggr + "," + s"${(value)}" }, (aggr1, aggr2) => aggr1 + aggr2)
+.sortBy(r=> r._1._1)
 .map(r=>r._2)
 
 //Saving Measure
