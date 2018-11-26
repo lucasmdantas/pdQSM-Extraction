@@ -58,7 +58,7 @@ Essa versão implementa pdQSM-Extraction com índice no bloco, com compressão n
         * Intel(R) Xeon(R) CPU 2.40GHz, 4 núcleos,
         * 16Gb ram
         * 90gb SSD
-        * spark-2.2.1-bin-hadoop2.7/bin/spark-submit --class br.ufc.spark.QSM5f --driver-memory 13g --executor-memory 4g --driver-cores 3 --executor-cores 1 -- num-executors 6 --conf spark.default.parallelism=12  --master spark://172.31.7.9:7077 /home/ubuntu/pdQSM.jar 256 /home/ubuntu/text512.txt *PathToSaveQ* *PathToSaveS*  *PathToSaveM*
+        * spark-2.2.1-bin-hadoop2.7/bin/spark-submit --class br.ufc.spark.pdQSMv1 --driver-memory 13g --executor-memory 4g --driver-cores 3 --executor-cores 1 -- num-executors 6 --conf spark.default.parallelism=12  --master spark://172.31.7.9:7077 /home/ubuntu/pdQSM.jar 256 "PathToOriginalFile* *PathToSaveQ* *PathToSaveS*  *PathToSaveM*
 
 Observações importantes:
   * Utilizar outros tipos de serialização para ganho de desempenho, como por exemplo: Kryo.
