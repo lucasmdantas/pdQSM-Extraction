@@ -9,7 +9,7 @@ Estes algoritmos foram executados no ambiente de nuvem :cloud: da Amazon. Obtive
 
 São 3 versões:
 
-**QSM5:**
+**pdQSMv1**
 
  Essa versão implementa pdQSM-Extraction com índice global, com compressão na Medida:
 
@@ -17,7 +17,7 @@ São 3 versões:
 
 * 5 argumentos: *tamanho do bloco*  *arquivo original*  *PathToSaveQ*  *PathToSaveS*  *PathToSaveM*
 
-**QSM10:**
+**pdQSMv2**
 
 Essa versão implementa pdQSM-Extraction com índice no bloco, com compressão na Medida:
 
@@ -26,7 +26,7 @@ Essa versão implementa pdQSM-Extraction com índice no bloco, com compressão n
 * 5 argumentos: *tamanho do bloco*  *arquivo original*  *PathToSaveQ*  *PathToSaveS*  *PathToSaveM*
 
 
-**QSM11:**
+**pdQSMv3**
 
 Essa versão implementa pdQSM-Extraction com índice no bloco, com compressão na Qualidade, Quantidade e na Medida:
 
